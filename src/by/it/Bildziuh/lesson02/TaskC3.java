@@ -30,17 +30,20 @@ package by.it.Bildziuh.lesson02;
 
 */
 
-import java.util.Locale;
+
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Scanner;
 
 class TaskC3 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int a = sc.nextInt();
-        System.out.println("Ввод:"+"\n"+a +"\n"+"\n"+"Вывод:"+"\n"+String.format(Locale.ENGLISH,"%(.2f",getWeight(a)));
+        System.out.println("Ввод:"+"\n"+a +"\n"+"\n"+"Вывод:"+"\n"+getWeight(a));
     }
     private static double getWeight(int weight){
-       double b = weight * (3.86/9.81);
-       return b;
+        double b = weight * (3.86 / 9.81);
+        return new BigDecimal(b).setScale(2, RoundingMode.HALF_UP).doubleValue();
     }
 }
