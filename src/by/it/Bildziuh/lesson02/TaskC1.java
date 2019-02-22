@@ -6,14 +6,20 @@ package by.it.Bildziuh.lesson02;
 Ввод (это вы вводите с клавиатуры):
 34 26
 
-Вывод (это должна появится в консоли, обратите внимание на пробелы и слово Sum:
+Вывод (это должна появится в консоли, обратите внимание на пробелы и слово Sum):
 Sum = 60
 
 */
+
+import java.util.Scanner;
+
 class TaskC1 {
 
-
-
-
-
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println("Ввод:"+"\n"+a +" " +b +"\n"+"\n"+"Вывод:"+"\n"+"Sum"+" "+"="+" "+c);
+    }
 }

@@ -29,6 +29,18 @@ package by.it.Bildziuh.lesson02;
 
 
 */
-class TaskC3 {
 
+import java.util.Locale;
+import java.util.Scanner;
+
+class TaskC3 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a = sc.nextInt();
+        System.out.println("Ввод:"+"\n"+a +"\n"+"\n"+"Вывод:"+"\n"+String.format(Locale.ENGLISH,"%(.2f",getWeight(a)));
+    }
+    private static double getWeight(int weight){
+       double b = weight * (3.86/9.81);
+       return b;
+    }
 }
