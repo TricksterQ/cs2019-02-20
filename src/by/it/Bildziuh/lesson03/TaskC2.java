@@ -26,20 +26,12 @@ public class TaskC2 {
 
     public static int sumDigitsInNumber(int number) {
         int sum = 0;
-        int rest;
-        rest = number % 10;
-        sum = sum + rest; // sum = 7
+        sum = sum + number % 10;
 
-        number = number / 10; //num = 546
-        rest = number % 10;
-        sum = sum + rest;  // sum = 13
-
-        number = number / 10; // num = 54
-        rest = number % 10; //ostatok = 4
-        sum = sum + rest;// sum = 17
-
-        sum = sum + number/10;
-
-        return sum;
+        while (number/10>9) {
+            number = number / 10;
+            sum = sum + number % 10;
+        }
+        return sum + number/10;
     }
 }
