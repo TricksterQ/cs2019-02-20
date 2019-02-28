@@ -30,7 +30,6 @@ class TaskC1 {
         System.out.println(convertCelsiumToFahrenheit(40));
     }
     public static double convertCelsiumToFahrenheit(int TC){
-        double TF = (TC/5*9)+32;
-        return TF;
+        return (double) (TC/5*9)+32;
 }
 }
