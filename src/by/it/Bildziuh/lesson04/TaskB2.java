@@ -32,13 +32,15 @@ public class TaskB2 {
         int stroka = 1;
         int stolbec = 1;
         while (stroka <= i) {
-            while (stolbec <= i) {
+            if (stolbec <= i) {
                 System.out.print(+stroka * stolbec + " ");
                 stolbec++;
             }
-            System.out.println(" ");
-            stroka++;
-            stolbec = 1;
+            else {
+                System.out.println(" ");
+                stroka++;
+                stolbec = 1;
+            }
         }
     }
 }
