@@ -47,21 +47,21 @@ public class TaskC1 {
         double i = sc.nextInt();
         if (i >= 300 && i <= 3000) {
             for (int month = 0; month <= 14; month++) {
-                double j = i * 3 / 2;
-                if (month == 0 || month == 13 || month == 14)
+                double j = i * 3 / 2; //j - сумма с премией
+                if (month == 0 || month == 13 || month == 14) //несуществующие месяцы
                     System.out.println("За месяц X начислено $0.0");
-                else if (month == 6 || month == 7 || month == 8) {
+                else if (month == 6 || month == 7 || month == 8) { //месяцы без премии
                     if (i == 666)
                         break;
                     else
                         System.out.println("За месяц Z начислено $" + i);
-                } else {
+                } else { //месяцы с премией
                     if (j == 666)
                         break;
                     else System.out.println("За месяц Y начислено $" + j);
                 }
             }
-        } else System.out.println("Мы вам перезвоним!");
+        } else System.out.println("Мы вам перезвоним!"); //вне диапазона
     }
 }
 
