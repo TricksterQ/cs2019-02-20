@@ -27,11 +27,39 @@ public class TaskC3 {
     public static void main(String[] args) {
         int raw;
         int column;
-        for (raw=1; raw<=10;raw++){
-            for (column=1;column<=10;column++){
-                System.out.print(+column*raw+" ");
+        for (raw = 2; raw <= 10; raw++) {
+            for (column = 2; column <= 10; column++) {
+                switch (column) {
+                    case 2:
+                        System.out.println("два умножить на " + raw + " равно " + raw * column);
+                        break;
+                    case 3:
+                        System.out.println("три умножить на " + raw + " равно " + raw * column);
+                        break;
+                    case 4:
+                        System.out.println("четыре умножить на " + raw + " равно " + raw * column);
+                        break;
+                    case 5:
+                        System.out.println("пять умножить на " + raw + " равно " + raw * column);
+                        break;
+                    case 6:
+                        System.out.println("шесть умножить на " + raw + " равно " + raw * column);
+                        break;
+                    case 7:
+                        System.out.println("семь умножить на " + raw + " равно " + raw * column);
+                        break;
+                    case 8:
+                        System.out.println("восемь умножить на " + raw + " равно " + raw * column);
+                        break;
+                    case 9:
+                        System.out.println("девять умножить на " + raw + " равно " + raw * column);
+                        break;
+                    case 10:
+                        System.out.println("десять умножить на " + raw + " равно " + raw * column);
+                        break;
+                }
+
             }
-            System.out.println();
         }
     }
 }
