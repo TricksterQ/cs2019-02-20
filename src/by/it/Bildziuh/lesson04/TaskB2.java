@@ -29,17 +29,17 @@ public class TaskB2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int i = sc.nextInt();
-        int stroka = 1;
-        int stolbec = 1;
-        while (stroka <= i) {
-            if (stolbec <= i) {
-                System.out.print(+stroka * stolbec + " ");
-                stolbec++;
+        int raw = 1;
+        int collumn = 1;
+        while (raw <= i) {
+            if (collumn <= i) {
+                System.out.print(+raw * collumn + " ");
+                collumn++;
             }
             else {
                 System.out.println(" ");
-                stroka++;
-                stolbec = 1;
+                raw++;
+                collumn = 1;
             }
         }
     }
