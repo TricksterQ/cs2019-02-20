@@ -30,16 +30,16 @@ public class TaskB2 {
         Scanner sc = new Scanner(System.in);
         int i = sc.nextInt();
         int raw = 1;
-        int collumn = 1;
+        int column = 1;
         while (raw <= i) {
-            if (collumn <= i) {
-                System.out.print(+raw * collumn + " ");
-                collumn++;
+            if (column <= i) {
+                System.out.print(+raw * column + " ");
+                column++;
             }
             else {
                 System.out.println(" ");
                 raw++;
-                collumn = 1;
+                column = 1;
             }
         }
     }

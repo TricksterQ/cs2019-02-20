@@ -24,5 +24,14 @@ package by.it.Bildziuh.lesson04;
 */
 
 public class TaskC3 {
-
+    public static void main(String[] args) {
+        int raw;
+        int column;
+        for (raw=1; raw<=10;raw++){
+            for (column=1;column<=10;column++){
+                System.out.print(+column*raw+" ");
+            }
+            System.out.println();
+        }
+    }
 }
