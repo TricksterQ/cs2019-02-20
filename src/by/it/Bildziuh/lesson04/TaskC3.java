@@ -61,31 +61,31 @@ public class TaskC3 {
             for (column = 2; column <= 10; column++) {
                 switch (column) {
                     case 2:
-                        System.out.println(+raw +" умножить на два" + " равно " + raw * column);
+                        System.out.println(+raw +" умножить на два равно " + raw * column);
                         break;
                     case 3:
-                        System.out.println(+raw +" умножить на три" + " равно " + raw * column);
+                        System.out.println(+raw +" умножить на три равно " + raw * column);
                         break;
                     case 4:
-                        System.out.println(+raw +" умножить на четыре" + " равно " + raw * column);
+                        System.out.println(+raw +" умножить на четыре равно " + raw * column);
                         break;
                     case 5:
-                        System.out.println(+raw +" умножить на пять" + " равно " + raw * column);
+                        System.out.println(+raw +" умножить на пять равно " + raw * column);
                         break;
                     case 6:
-                        System.out.println(+raw +" умножить на шесть" + " равно " + raw * column);
+                        System.out.println(+raw +" умножить на шесть равно " + raw * column);
                         break;
                     case 7:
-                        System.out.println(+raw +" умножить на семь" + " равно " + raw * column);
+                        System.out.println(+raw +" умножить на семь равно " + raw * column);
                         break;
                     case 8:
-                        System.out.println(+raw +" умножить на восемь" + " равно " + raw * column);
+                        System.out.println(+raw +" умножить на восемь равно " + raw * column);
                         break;
                     case 9:
-                        System.out.println(+raw +" умножить на девять" + " равно " + raw * column);
+                        System.out.println(+raw +" умножить на девять равно " + raw * column);
                         break;
                     case 10:
-                        System.out.println(+raw +" умножить на десять" + " равно " + raw * column);
+                        System.out.println(+raw +" умножить на десять равно " + raw * column);
                         break;
                 }
 
