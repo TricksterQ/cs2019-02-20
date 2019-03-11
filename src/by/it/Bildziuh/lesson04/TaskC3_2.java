@@ -23,73 +23,77 @@ package by.it.Bildziuh.lesson04;
 десять умножить на десять равно сто
 */
 
-public class TaskC3 {
-    public static void main(String[] args) {
-        int raw;
-        int column;
 
-        for (raw = 2; raw <= 10; raw++) {
+public class TaskC3_2 {
+    public static void main(String[] args) {
+        int raw = 2;
+        int column = 2;
+        while (raw <= 10) {
             switch (raw) {
                 case 2:
-                    System.out.print("два");
+                    System.out.print("Два ");
                     break;
                 case 3:
-                    System.out.print("Три");
+                    System.out.print("Три ");
                     break;
                 case 4:
-                    System.out.print("Четыре");
+                    System.out.print("Четыре ");
                     break;
                 case 5:
-                    System.out.print("Пять");
+                    System.out.print("Пять ");
                     break;
                 case 6:
-                    System.out.print("Шесть");
+                    System.out.print("Шесть ");
                     break;
                 case 7:
-                    System.out.print("Семь");
+                    System.out.print("Семь ");
                     break;
                 case 8:
-                    System.out.print("Восемь");
+                    System.out.print("Восемь ");
                     break;
                 case 9:
-                    System.out.print("Девять");
+                    System.out.print("Девять ");
                     break;
                 case 10:
-                    System.out.print("Десять");
+                    System.out.print("Десять ");
                     break;
             }
-
-            for (column = 2; column <= 10; column++) {
+            if (column <= 10) {
                 switch (column) {
                     case 2:
-                        System.out.println(+raw +" умножить на два равно " + raw * column);
+                        System.out.println("умножить на два равно " + raw * column);
                         break;
                     case 3:
-                        System.out.println(+raw +" умножить на три равно " + raw * column);
+                        System.out.println("умножить на три равно " + raw * column);
                         break;
                     case 4:
-                        System.out.println(+raw +" умножить на четыре равно " + raw * column);
+                        System.out.println("умножить на четыре равно " + raw * column);
                         break;
                     case 5:
-                        System.out.println(+raw +" умножить на пять равно " + raw * column);
+                        System.out.println("умножить на пять равно " + raw * column);
                         break;
                     case 6:
-                        System.out.println(+raw +" умножить на шесть равно " + raw * column);
+                        System.out.println("умножить на шесть равно " + raw * column);
                         break;
                     case 7:
-                        System.out.println(+raw +" умножить на семь равно " + raw * column);
+                        System.out.println("умножить на семь равно " + raw * column);
                         break;
                     case 8:
-                        System.out.println(+raw +" умножить на восемь равно " + raw * column);
+                        System.out.println("умножить на восемь равно " + raw * column);
                         break;
                     case 9:
-                        System.out.println(+raw +" умножить на девять равно " + raw * column);
+                        System.out.println("умножить на девять равно " + raw * column);
                         break;
                     case 10:
-                        System.out.println(+raw +" умножить на десять равно " + raw * column);
+                        System.out.println("умножить на десять равно " + raw * column);
                         break;
                 }
+                column++;
+            } else {
+                raw++;
+                column = 1;
             }
         }
     }
+
 }
