@@ -90,6 +90,7 @@ public class TaskC3_2 {
                 }
                 column++;
             } else {
+                System.out.println();
                 raw++;
                 column = 1;
             }
