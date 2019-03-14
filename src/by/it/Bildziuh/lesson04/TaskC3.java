@@ -25,71 +25,32 @@ package by.it.Bildziuh.lesson04;
 
 public class TaskC3 {
     public static void main(String[] args) {
-        int raw;
-        int column;
 
-        for (raw = 2; raw <= 10; raw++) {
-            switch (raw) {
-                case 2:
-                    System.out.print("два");
-                    break;
-                case 3:
-                    System.out.print("Три");
-                    break;
-                case 4:
-                    System.out.print("Четыре");
-                    break;
-                case 5:
-                    System.out.print("Пять");
-                    break;
-                case 6:
-                    System.out.print("Шесть");
-                    break;
-                case 7:
-                    System.out.print("Семь");
-                    break;
-                case 8:
-                    System.out.print("Восемь");
-                    break;
-                case 9:
-                    System.out.print("Девять");
-                    break;
-                case 10:
-                    System.out.print("Десять");
-                    break;
-            }
 
-            for (column = 2; column <= 10; column++) {
-                switch (column) {
-                    case 2:
-                        System.out.println(+raw +" умножить на два равно " + raw * column);
-                        break;
-                    case 3:
-                        System.out.println(+raw +" умножить на три равно " + raw * column);
-                        break;
-                    case 4:
-                        System.out.println(+raw +" умножить на четыре равно " + raw * column);
-                        break;
-                    case 5:
-                        System.out.println(+raw +" умножить на пять равно " + raw * column);
-                        break;
-                    case 6:
-                        System.out.println(+raw +" умножить на шесть равно " + raw * column);
-                        break;
-                    case 7:
-                        System.out.println(+raw +" умножить на семь равно " + raw * column);
-                        break;
-                    case 8:
-                        System.out.println(+raw +" умножить на восемь равно " + raw * column);
-                        break;
-                    case 9:
-                        System.out.println(+raw +" умножить на девять равно " + raw * column);
-                        break;
-                    case 10:
-                        System.out.println(+raw +" умножить на десять равно " + raw * column);
-                        break;
-                }
-            }
-        }
+        for (int raw = 2; raw <= 10; raw++)
+            for (int column = 2; column <= 10; column++)
+                System.out.println(string(raw) + " умножить на " + string(column) + " равно " + string(raw * column));
+
+    }
+
+    private static String string(int i) {
+        String[] units = {
+                "ноль", "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь",
+                "девять", "десять", "одинадцать", "двенадцать", "тринадцать", "четырнадцать",
+                "пятнадцать", "шестнадцать", "семнадцать", "восемнадцать", "девятнадцать"};
+        String[] tens = {
+                "ноль", "десять", "двадцать", "тридцать", "сорок", "пятьдесят",
+                "шестьдесят", "семьдесят", "восемьдесят", "девяносто", "сто"};
+
+        if (i < 20)
+            return units[i];
+        int d = i / 10;
+        int m = i % 10;
+        if (m == 0)
+            return tens[d];
+        else
+            return tens[d] + " " + units[m];
     }
 }
+
+
