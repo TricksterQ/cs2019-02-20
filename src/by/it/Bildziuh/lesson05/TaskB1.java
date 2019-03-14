@@ -24,10 +24,8 @@ public class TaskB1 {
             listLength = listLength + value.length();
         }
         System.out.println(listLength);
-
-        for (int i = 0; i < list.size(); i++)
-            System.out.println(list.get(i));
-
+        //for (int i = 0; i < list.size(); i++)
+        //    System.out.println(list.get(i));
+        for (String string : list) System.out.println(string);
     }
-
 }
